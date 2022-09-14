@@ -14,7 +14,7 @@ app.use('/', route);
 
 require("dotenv").config()
 
-mongoose.connect(process.env.MONGO_URL, {    //
+mongoose.connect("mongodb+srv://subhamsidharth:2NoDZjzEUgRaFunQ@cluster0.f3bng.mongodb.net/SCHBANGQ?retryWrites=true&w=majority", {    //
   useNewUrlParser: true
 })
 .then(function(){
