@@ -1,0 +1,31 @@
+{
+  "name": "course_management_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test":"echo \"Error: no test specified\" && exit 1",
+    "start":"node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Subhamsidharth/Course_Management_System.git"
+  },
+  "keywords": [],
+  "author": "Subham Sidhartha Mahapatra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Subhamsidharth/Course_Management_System/issues"
+  },
+  "homepage": "https://github.com/Subhamsidharth/Course_Management_System#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1211.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.19"
+  }
+}
