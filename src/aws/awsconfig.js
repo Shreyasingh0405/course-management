@@ -1,9 +1,9 @@
 const aws = require("aws-sdk");
 
 aws.config.update({
-    accessKeyId: "AKIAY3L35MCRVFM24Q7U",
-    secretAccessKey: "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",
-    region: "ap-south-1"
+    accessKeyId: process.env.accessKeyId,
+    secretAccessKey: process.env.secretAccessKey,
+    region: process.env.region
 })
 let uploadFile = async (file) => {
     return new Promise(function (resolve, reject) {
@@ -11,8 +11,8 @@ let uploadFile = async (file) => {
         let s3 = new aws.S3({ apiVersion: '2006-03-01' }); // we will be using the s3 service of aws
         var uploadParams = {
             ACL: "public-read",
-            Bucket: "classroom-training-bucket",  //HERE
-            Key: "Subham_SchbangQ" + file.originalname, //HERE 
+            Bucket:process.env.Bucket,  //HERE
+            Key: process.env.key + file.originalname, //HERE 
             Body: file.buffer
         }
         s3.upload(uploadParams, function (err, data) {
