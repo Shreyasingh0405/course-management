@@ -3,8 +3,6 @@ const route = require('./routes/route.js');
 const mongoose = require('mongoose');
 const multer = require('multer');
 const app = express();
-//const { AppConfig } = require('aws-sdk');
-// const dotenv=require("dotenv").config()
 
 
 
@@ -14,7 +12,7 @@ app.use('/', route);
 
 require("dotenv").config()
 
-mongoose.connect("mongodb+srv://subhamsidharth:2NoDZjzEUgRaFunQ@cluster0.f3bng.mongodb.net/SCHBANGQ?retryWrites=true&w=majority", {    //
+mongoose.connect("process.env.MONGOURL", {    //
   useNewUrlParser: true
 })
 .then(function(){
@@ -25,4 +23,4 @@ mongoose.connect("mongodb+srv://subhamsidharth:2NoDZjzEUgRaFunQ@cluster0.f3bng.m
 })
 
 
-app.listen(process.env.PORT || 3000, function(){return console.log(`Express is running on port🤣 ${process.env.PORT || 3000}`)});
+app.listen(process.env.PORT || 3000, function(){return console.log(`Express is running on port ${process.env.PORT || 3000}`)});
