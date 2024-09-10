@@ -27,6 +27,7 @@ const empSchema = new mongoose.Schema({
         default:"Employee"
     }
    
-}, { timestamps: true })
+}, 
+{ timestamps: true })
 
 module.exports = mongoose.model('emp', empSchema)
