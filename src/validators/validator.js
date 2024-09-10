@@ -85,7 +85,6 @@ function removeSpaces(x){
     return x.split(" ").filter((y)=> y).join(" ");
 }
 
-
 //trimAndUpperCase
 function trimAndUpperCase(x){
     return x.split(" ").filter((y)=> y).map((z)=> z = z.charAt(0).toUpperCase() + z.slice(1)).join(" ");
