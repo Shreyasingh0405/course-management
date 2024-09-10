@@ -33,29 +33,5 @@ module.exports.authentication= async function (req, res, next) {
   }
 };
 
-//------------------------------------Authorisation----------------------------------------------------------------//
-// module.exports.authorisation = async function(req, res, next){     //userId from params
-//   try{
-//       const userId = req.params.userId;
-//       if(!userId) return res.status(400).send({status:false, message:"enter user id in url"})// handled by postman as well
-//       if(!mongoose.Types.ObjectId.isValid(userId)) return res.status(400).send({status:false, message:"enter a valid user id in url path"});
-
-//       const user = await empModel.findById(empId);
-//       if(!user) return res.status(404).send({status:false, message:"user does not exist"})  //new changes added
-
-//       const loggedInUserId = req.token.userId;
-//       if(loggedInUserId !== userId) return res.status(403).send({status:false, message:`user ${loggedInUserId} is not authorised to make changes in ${userId}`});
-//       next();
-
-//   }catch(err){
-//       console.log(err)
-//       return res.status(500).send({status:false, message:err.message})
-//   }
-// }
-
- // "Bearer eyyyyyyyyyyyyyyyyyy";
-   
-    // token.split(" "); => ["Bearer", "eyyyyyyyyyyyyyyyyy"]
-    // token = arr[1]
 
     
