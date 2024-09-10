@@ -136,5 +136,4 @@ const getCourseByquery= async (req, res) => {
 
     }
 }
-
 module.exports={createEmp,empLogin,getCourseById,getCourseByquery}
