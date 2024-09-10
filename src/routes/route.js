@@ -4,7 +4,6 @@ const{createEmp,empLogin, getCourseById,getCourseByquery}=require("../controller
 const{createCourse,deleteCourse,updateCourse}=require("../controllers/adminController")
 const{authentication}=require("../middleware/auth")
 
-
 router.post("/register", createEmp)
 router.post("/login", empLogin)
 
