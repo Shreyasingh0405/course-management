@@ -105,6 +105,4 @@ const deleteCourse = async (req, res) => {
         return res.status(500).send({ message: err.message });
     }
 };
-
-
 module.exports = { createCourse, deleteCourse, updateCourse }
