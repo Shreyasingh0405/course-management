@@ -1,34 +1,60 @@
-# Course_Management_System
+# 📚 Course Management System
 
-    Backend Developer Task
+Welcome to the **Course Management System**! This application is designed to streamline the creation, management, and consumption of courses with a focus on different user roles. Whether you're a Super Admin, Admin, or Employee, this system has tailored features to enhance your experience. 🌟
 
-Task is to build course management system, where you will have to create three user roles, Super Admin, Admin and Employee, perform CRUD operation 
+## 🌟 Features
 
- Sign up - 
-Create new Employee (name, email, password (encrypted), role )
-By default, Employee
+### **1. User Roles and Management**
 
- Sign In - 
-Sign in with email and password
+- **👑 Super Admin**:  
+  - Approve courses created or updated by Admins.
+  - Ensure that only approved courses are visible to Employees.
 
- Admin - 
-Create new course (title, description, video Url, topics array, duration, category, )
-Update existing course (admin should able to add/delete part of the courses which potentially consists of pdfs, videos, and quizzes)
-Delete Course
+- **🛠️ Admin**:  
+  - Create new courses with details like title, description, video URL, topics, duration, and category.
+  - Update or delete existing courses, including managing associated PDFs, videos, and quizzes.
 
- Super Admin - 
-Approve Created and updated course by admin (Note: Employee can only see course Approved by super Admin)
+- **👤 Employee**:  
+  - View courses approved by Super Admins.
+  - Use a token-based system for login.
+  - Sort courses by category.
+  - Earn rewards based on progress or completion.
 
- Employee - 
-View existing course (only if logged in and approved by super admin)
-Use Token for login
-Sort course category wise
-Get rewards for progress/completion
+### **2. Authentication**
 
- Testing - 
-Make a frontend to test all the Api (optional)
-Test all Api in Postman
+- **🔐 Sign Up**:  
+  - Create a new Employee account with an encrypted password.
+  - Default role is Employee.
+
+- **🔑 Sign In**:  
+  - Login using email and password.
+
+### **3. Course Management**
+
+- **📋 Create a Course**:  
+  - Add a new course with the following details:  
+    - Title  
+    - Description  
+    - Video URL  
+    - Topics (Array)  
+    - Duration  
+    - Category
+
+- **✏️ Update a Course**:  
+  - Modify course details or add/delete parts including PDFs, videos, and quizzes.
+
+- **🗑️ Delete a Course**:  
+  - Remove courses that are no longer needed.
+
+### **4. Employee Features**
+
+- **🔍 View Courses**:  
+  - Access courses that have been approved by Super Admins.
+  
+- **🔄 Sort Courses**:  
+  - Filter courses based on categories.
 
 
-Important Note:  Task will only be considered as complete if we get a postman exported folder. Test   the Api in postman and send us a folder containing all the Api with prefilled data to test. 
+ 
+
 
